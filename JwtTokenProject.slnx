@@ -1,12 +1,28 @@
 <Solution>
-  <Project Path="Application/Application.csproj" />
-  <Project Path="Common.Application/Common.Application.csproj" />
-  <Project Path="Common.AspNetCore/Common.AspNetCore.csproj" Id="4c2589db-61da-48f9-8415-cc547275d486" />
-  <Project Path="Common.Domain/Common.Domain.csproj" />
-  <Project Path="Common.Query/Common.Query.csproj" />
-  <Project Path="Domain/Domain.csproj" />
-  <Project Path="Infrastructure/Infrastructure.csproj" />
-  <Project Path="MyApi/MyApi.csproj" Id="87647d5a-a75b-4278-a822-6608f34d53b1" />
-  <Project Path="Presentation.Facade/Presentation.Facade.csproj" Id="96685603-75de-4f9d-b64f-bd5c5ff75478" />
-  <Project Path="Query/Query.csproj" Id="ce5c0a0c-d0b7-43b7-8669-50cdb8aefd06" />
+  <Folder Name="/src/" />
+  <Folder Name="/src/Common/">
+    <Project Path="src/Common/Common.Application/Common.Application.csproj" />
+    <Project Path="src/Common/Common.AspNetCore/Common.AspNetCore.csproj" />
+    <Project Path="src/Common/Common.Domain/Common.Domain.csproj" />
+    <Project Path="src/Common/Common.EventBus/Common.EventBus.csproj" />
+    <Project Path="src/Common/Common.Query/Common.Query.csproj" />
+  </Folder>
+  <Folder Name="/src/EndPoint/">
+    <Project Path="src/EndPoint/MyApi/MyApi.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/CoreModule/">
+    <Project Path="src/Modules/CoreModule/CoreModule.Application/CoreModule.Application.csproj" Id="f4d5993c-a7b3-4e9c-83cc-627dcbd30831" />
+    <Project Path="src/Modules/CoreModule/CoreModule.Domain/CoreModule.Domain.csproj" Id="f824824c-8b4e-4d95-a067-c040bf890491" />
+    <Project Path="src/Modules/CoreModule/CoreModule.Infrastructure/CoreModule.Infrastructure.csproj" Id="e48fe20c-8ef5-4ece-b03e-2f7296ad7ba1" />
+    <Project Path="src/Modules/CoreModule/CoreModule.Presentation.Facade/CoreModule.Presentation.Facade.csproj" Id="d1540488-7433-4169-ac82-4798a12f2070" />
+    <Project Path="src/Modules/CoreModule/CoreModule.Query/CoreModule.Query.csproj" Id="2665d42a-2d9d-4998-9b80-97a11dcac166" />
+  </Folder>
+  <Folder Name="/src/Modules/UserModule/">
+    <Project Path="src/Modules/UserModule/Application/Application.csproj" />
+    <Project Path="src/Modules/UserModule/Domain/Domain.csproj" />
+    <Project Path="src/Modules/UserModule/Infrastructure/Infrastructure.csproj" />
+    <Project Path="src/Modules/UserModule/Presentation.Facade/Presentation.Facade.csproj" />
+    <Project Path="src/Modules/UserModule/Query/Query.csproj" />
+  </Folder>
 </Solution>
